@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a:hover {
+        color: red;
+      }
+      a:visited {
+        color: green;
+      }
+      body {
+        background: linear-gradient(
+          45deg,
+          /*调节背景颜色分布角度*/ #ff9a9e 0%,
+          #fad0c4 30%,
+          #fad0c4 70%,
+          #a1c4fd 100%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <h1>注册信息</h1>
+    <hr />
+    <form action="">
+      <!-- 表单控件 -->
+      <!-- 个人信息 -->
+      <h2>个人信息</h2>
+      <label>姓名：</label
+      ><input type="text" placeholder="请输入真实姓名" required /><br /><br />
+      <label>密码：</label
+      ><input type="password" placeholder="请输入密码" required /><br /><br />
+      <label>确认密码：</label
+      ><input
+        type="password"
+        placeholder="请输入确认密码"
+        required
+      /><br /><br />
+      <div class="form-group">
+        <label for="email">邮箱：</label>
+        <input type="email" id="email" placeholder="请输入有效邮箱" required />
+        <!-- required 表示这个是必填项目 -->
+        <div class="validation-message"></div>
+        <!-- 这个div标签用于验证错误信息，如果邮箱格式错误，JS会在这里显示"请输入有效的邮箱地址" -->
+      </div>
+      <!--form-group用来组织相关的表单元素-->
+      <br />
+      性别：<input type="radio" name="gender" id="man" /><label for="man"
+        >男</label
+      >
+      <label><input type="radio" name="gender" />女</label><br /><br />
+      居住城市：
+      <select>
+        <option>北京</option>
+        <option>上海</option>
+        <option>广州</option>
+        <option>宁波</option>
+      </select>
+      <!-- 教育经历 -->
+      <h2>教育经历</h2>
+      最高学历：
+      <select>
+        <option>博士</option>
+        <option>硕士</option>
+        <option>研究生</option>
+        <option>本科</option>
+        <option>专科</option>
+        <option>高中</option>
+        <option>初中</option>
+        <option>小学</option>
+      </select>
+      <br /><br />
+      <label>学校名称：</label><input type="text" /><br /><br />
+      <label>所学专业：</label><input type="text" /><br /><br />
+      掌握的编程语言：<label><input type="checkbox" />C语言</label>
+      <label><input type="checkbox" />Java</label>
+      <label><input type="checkbox" />Python</label> <br /><br />
+      在校时间：
+      <select>
+        <option>2020</option>
+        <option>2021</option>
+        <option>2022</option>
+        <option>2023</option>
+        <option>2024</option>
+        <option></option>
+      </select>
+      --
+      <select>
+        <option>2024</option>
+        <option>2025</option>
+        <option>2026</option>
+        <option>2027</option>
+        <option>2028</option>
+        <option></option>
+      </select>
+      <!-- 工作经历 -->
+      <h2>工作经历</h2>
+      <label>公司名称：</label><input type="text" /><br /><br />
+      工作描述：<br />
+      <textarea></textarea>
+      <br /><br />
+      <label><input type="checkbox" />我已阅读并同意以下协议：</label>
+      <ul>
+        <li><a href="#">《用户服务协议》</a></li>
+        <li><a href="#">《隐私政策》</a></li>
+      </ul>
+      <br />
+      <button type="submit">免费注册</button>
+      <button type="reset">重新填写</button>
+      <!-- 协议 和 按钮 -->
+      <br /><br />
+      <a
+        href="https://www.bilibili.com/video/BV1kM4y127Li/?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click&vd_source=c6c350a04b7e6ae801d6d874f31a5c7d"
+        target="_blank"
+        >HTML学习视频</a
+      >
+      <h3>附件上传</h3>
+      <div class="form-group">
+        <label for="resume">上传简历：</label>
+        <input type="file" id="resume" accept=".pdf,.doc,.docx" />
+        <small>支持PDF、Word格式,最大5MB</small>
+      </div>
+    </form>
+  </body>
+</html>
